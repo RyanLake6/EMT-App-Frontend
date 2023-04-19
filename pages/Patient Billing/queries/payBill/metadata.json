@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "GetPatient",
+    "name": "payBill",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/m/Patient/{{RunNumber.selectedOptionValue}}"
+        "url": "web:4000/b/payment/{{payRN.text}}/{{payAmt.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "HR Editing",
+    "pageId": "Patient Billing",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,20 +37,25 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "datasourceUrl"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "RunNumber.selectedOptionValue"
+      "payAmt.text",
+      "payRN.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "HR Editing_GetPatient",
+  "id": "Patient Billing_payBill",
   "deleted": false,
-  "gitSyncId": "644014e59f9b4532d6281257_6440478a3be5ec233ee4c794"
+  "gitSyncId": "64401a8f8579e530a4a0ff05_644049b49019806901afbd6c"
 }

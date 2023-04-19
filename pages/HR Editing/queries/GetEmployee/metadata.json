@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/m/Employee/{{RunNumber.selectedOptionValue}}"
+        "url": "web:4000/m/Employee/{{EmployeeID.selectedRow.employeeID}}"
       },
       "invalids": [],
       "messages": [],
@@ -39,17 +39,17 @@
     "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
-        "key": "datasourceUrl"
+        "key": "datasource.datasourceConfiguration.url"
       },
       {
-        "key": "datasource.datasourceConfiguration.url"
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "RunNumber.selectedOptionValue"
+      "EmployeeID.selectedRow.employeeID"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "GetEmployee",
+    "name": "GetInventory",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/m/Employee/{{EmployeeID.selectedRow.employeeID}}"
+        "url": "web:4000/m/Inventory/{{RunNumber.selectedOptionValue}}"
       },
       "invalids": [],
       "messages": [],
@@ -37,26 +37,19 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "datasource.datasourceConfiguration.url"
-      },
-      {
-        "key": "datasourceUrl"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "EmployeeID.selectedRow.employeeID"
+      "RunNumber.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "HR Editing_GetEmployee",
+  "id": "HR Editing_GetInventory",
   "deleted": false,
-  "gitSyncId": "644014e59f9b4532d6281257_644049743be5ec233ee4c798"
+  "gitSyncId": "644014e59f9b4532d6281257_64406c53de46c406e1dfb31e"
 }

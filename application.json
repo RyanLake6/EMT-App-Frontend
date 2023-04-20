@@ -9,10 +9,6 @@
       "isDefault": false
     },
     {
-      "id": "Patient Billing",
-      "isDefault": false
-    },
-    {
       "id": "Patient Viewing",
       "isDefault": false
     }
@@ -22,6 +18,9 @@
   "unreadCommentThreads": 0,
   "color": "#E3DEFF",
   "icon": "team",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,

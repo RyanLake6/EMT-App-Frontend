@@ -2416,7 +2416,7 @@
                 "label"
               ],
               "topRow": 30,
-              "bottomRow": 35,
+              "bottomRow": 34,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -3570,8 +3570,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 32,
-              "bottomRow": 36,
+              "topRow": 31,
+              "bottomRow": 35,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -3630,7 +3630,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 10.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 42,
+              "leftColumn": 47,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -3647,7 +3647,7 @@
               "text": "Warning this cannot be undone",
               "key": "rpc3e3viol",
               "isDeprecated": false,
-              "rightColumn": 64,
+              "rightColumn": 59,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "jb7sfqnnyw",
@@ -3960,7 +3960,7 @@
                       "parentColumnSpace": 5.9765625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 7,
+                      "leftColumn": 5,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -3977,7 +3977,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 27,
+                      "rightColumn": 25,
                       "dynamicHeight": "FIXED",
                       "widgetId": "o0us6fqkh3",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -4019,7 +4019,7 @@
                       "parentColumnSpace": 5.9765625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 36,
+                      "leftColumn": 33,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -4036,7 +4036,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 56,
+                      "rightColumn": 53,
                       "dynamicHeight": "FIXED",
                       "widgetId": "q81alnkbb9",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -4380,7 +4380,7 @@
                       "parentColumnSpace": 6.1337890625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 6,
+                      "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -4397,7 +4397,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 26,
+                      "rightColumn": 22,
                       "dynamicHeight": "FIXED",
                       "widgetId": "v83dt6aveo",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -4439,7 +4439,7 @@
                       "parentColumnSpace": 6.1337890625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 33,
+                      "leftColumn": 29,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -4456,7 +4456,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 53,
+                      "rightColumn": 49,
                       "dynamicHeight": "FIXED",
                       "widgetId": "w20t3ltxmw",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",

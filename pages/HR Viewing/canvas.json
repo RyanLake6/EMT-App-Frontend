@@ -580,7 +580,7 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Button2",
-              "onClick": "{{GetSurveyCounts.run();\nNumberOfEmergencies.run();\nGetTravelTimes.run()}}",
+              "onClick": "{{GetSurveyCounts.run();\nNumberOfEmergencies.run();\nGetTravelTimes.run();\nGetCallTypes.run()}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "dynamicPropertyPathList": [
                 {

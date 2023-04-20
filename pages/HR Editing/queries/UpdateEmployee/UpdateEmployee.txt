@@ -1,0 +1,7 @@
+{
+	"firstName": {{updateFirstName.text}},
+	"lastName": {{updateLastName.text}},
+	"qual": {{updateQual.text}},
+	"shiftID": {{Number(updateShiftID.text)}},
+	"employeeID": {{Number(EmployeeID.selectedRow.employeeID)}}
+}

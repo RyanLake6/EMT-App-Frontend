@@ -447,7 +447,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "",
+                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `1`))(RunNumber.options, RunNumber.serverSideFiltering) }}",
                       "animateLoading": true,
                       "parentColumnSpace": 3.146484375,
                       "dynamicTriggerPathList": [
@@ -468,6 +468,9 @@
                         },
                         {
                           "key": "options"
+                        },
+                        {
+                          "key": "defaultOptionValue"
                         }
                       ],
                       "labelPosition": "Top",
@@ -610,9 +613,6 @@
                   "key": "boxShadow"
                 },
                 {
-                  "key": "tableData"
-                },
-                {
                   "key": "primaryColumns.licensePlate.computedValue"
                 },
                 {
@@ -620,6 +620,9 @@
                 },
                 {
                   "key": "primaryColumns.truckID.computedValue"
+                },
+                {
+                  "key": "tableData"
                 }
               ],
               "needsHeightForContent": true,
@@ -814,10 +817,10 @@
                   "key": "boxShadow"
                 },
                 {
-                  "key": "tableData"
+                  "key": "primaryColumns.employeeID.computedValue"
                 },
                 {
-                  "key": "primaryColumns.employeeID.computedValue"
+                  "key": "tableData"
                 }
               ],
               "needsHeightForContent": true,
@@ -3200,8 +3203,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "First_Name.text",
-                "Last_Name.text"
+                "Last_Name.text",
+                "First_Name.text"
               ],
               "timeoutInMillisecond": 10000
             }

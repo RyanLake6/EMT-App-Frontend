@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "HR Editing",
+    "pageId": "HR Viewing",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -54,7 +54,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "HR Editing_SearchingEmployee",
+  "id": "HR Viewing_SearchingEmployee",
   "deleted": false,
-  "gitSyncId": "644014e59f9b4532d6281257_644031773be5ec233ee4c76c"
+  "gitSyncId": "644014e59f9b4532d6281257_64406e84de46c406e1dfb322"
 }

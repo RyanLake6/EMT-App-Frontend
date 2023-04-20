@@ -1,0 +1,6 @@
+{
+	"firstName": {{firstName.text}},
+	"lastName": {{lastName.text}},
+	"qual": {{qual.text}},
+	"shiftID": {{Number(shiftID.text)}}
+}

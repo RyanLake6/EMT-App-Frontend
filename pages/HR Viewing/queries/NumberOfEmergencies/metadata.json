@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "GettingRunNumbers",
+    "name": "NumberOfEmergencies",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/m/runNumbers/{{EmployeeID.selectedRow.employeeID}}"
+        "url": "web:4000/m/emergencyNumbers/{{EmployeeID.selectedRow.employeeID}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "HR Editing",
+    "pageId": "HR Viewing",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,11 +37,7 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "datasourceUrl"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -53,7 +49,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "HR Editing_GettingRunNumbers",
+  "id": "HR Viewing_NumberOfEmergencies",
   "deleted": false,
-  "gitSyncId": "644014e59f9b4532d6281257_644039573be5ec233ee4c775"
+  "gitSyncId": "644014e59f9b4532d6281257_644096bade46c406e1dfb32f"
 }

@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "GettingRunNumbers",
+    "name": "SearchingEmployee",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/m/runNumbers/{{EmployeeID.selectedRow.employeeID}}"
+        "url": "web:4000/m/employees/{{First_Name.text}}/{{Last_Name.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "HR Editing",
+    "pageId": "HR Viewing",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -46,14 +46,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "EmployeeID.selectedRow.employeeID"
+      "First_Name.text",
+      "Last_Name.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "HR Editing_GettingRunNumbers",
+  "id": "HR Viewing_SearchingEmployee",
   "deleted": false,
-  "gitSyncId": "644014e59f9b4532d6281257_644039573be5ec233ee4c775"
+  "gitSyncId": "644014e59f9b4532d6281257_64406e84de46c406e1dfb322"
 }

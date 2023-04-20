@@ -9,7 +9,7 @@
       "isDefault": false
     },
     {
-      "id": "Patient Billing",
+      "id": "Patient Billing and Insurance",
       "isDefault": false
     },
     {
@@ -22,6 +22,9 @@
   "unreadCommentThreads": 0,
   "color": "#E3DEFF",
   "icon": "team",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,

@@ -580,8 +580,13 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Button2",
-              "onClick": "{{GetSurveyCounts.run()}}",
+              "onClick": "{{GetSurveyCounts.run();\nNumberOfEmergencies.run()}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
@@ -647,21 +652,16 @@
               "hideCard": false,
               "chartData": {
                 "pmqixxvlo5": {
-                  "seriesName": "Sales",
-                  "data": [
-                    {
-                      "x": "Product1",
-                      "y": 20000
-                    },
-                    {
-                      "x": "Product2",
-                      "y": 22000
-                    },
-                    {
-                      "x": "Product3",
-                      "y": 32000
-                    }
-                  ]
+                  "seriesName": "",
+                  "data": "{{GetTravelTimes.data.map( p => ({x: \"At Scene\", y: p.atSceneTime}))}}"
+                },
+                "tqoak8scp5": {
+                  "seriesName": "",
+                  "data": "{{GetTravelTimes.data.map( p => ({x: \"Transport Time\", y: p.hospitalTravel}))}}"
+                },
+                "k8on63nnk7": {
+                  "seriesName": "",
+                  "data": "{{GetTravelTimes.data.map( p => ({x: \"Reponse Time\", y: p.sceneTravel}))}}"
                 }
               },
               "animateLoading": true,
@@ -681,6 +681,15 @@
                 },
                 {
                   "key": "fontFamily"
+                },
+                {
+                  "key": "chartData.pmqixxvlo5.data"
+                },
+                {
+                  "key": "chartData.tqoak8scp5.data"
+                },
+                {
+                  "key": "chartData.k8on63nnk7.data"
                 }
               ],
               "customFusionChartConfig": {
@@ -743,10 +752,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "yAxisName": "Revenue($)",
+              "yAxisName": "Minutes",
               "chartName": "Average Travel Times",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "xAxisName": "Product Line",
+              "xAxisName": "Travel Times",
               "chartType": "COLUMN_CHART"
             },
             {
@@ -880,6 +889,16 @@
             {
               "id": "HR Viewing_GetSurveyCounts",
               "name": "GetSurveyCounts",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "EmployeeID.selectedRow.employeeID"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "HR Viewing_GetTravelTimes",
+              "name": "GetTravelTimes",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [

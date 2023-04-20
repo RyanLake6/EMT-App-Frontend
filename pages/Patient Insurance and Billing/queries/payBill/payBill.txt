@@ -1,0 +1,3 @@
+{
+	"amount": {{payAmt.text}}
+}

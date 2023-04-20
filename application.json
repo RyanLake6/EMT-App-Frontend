@@ -11,6 +11,10 @@
     {
       "id": "Patient Viewing",
       "isDefault": false
+    },
+    {
+      "id": "Patient Insurance and Billing",
+      "isDefault": false
     }
   ],
   "viewMode": false,

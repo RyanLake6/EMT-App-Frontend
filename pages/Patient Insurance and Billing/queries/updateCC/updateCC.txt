@@ -1,0 +1,4 @@
+{
+	"currentCard": {{OldCCField.text}},
+	"newCard": {{NewCCField.text}}
+}

@@ -1,0 +1,8 @@
+{
+	"subscriberID": {{subscriberID.text}}
+	"groupNumber": {{groupNumber.text}}
+	"provider": {{Provider.text}}
+	"subscriberDateOfBirth": {{dob.text}}
+	"firstNameSubscriber": {{firstName.text}}
+	"lastNameSubscriber": {{lastName.text}}
+}

@@ -1,6 +1,6 @@
 ## EMT-App Frontend:
 
-This repo holds the frontend to our EMT-App where would-be users can interact with out backend and database in the GUI built with Appsmith.
+This repo holds the frontend to our EMT-App where would-be users can interact with our backend and database in the GUI built with Appsmith.
 
 ## Setup:
 

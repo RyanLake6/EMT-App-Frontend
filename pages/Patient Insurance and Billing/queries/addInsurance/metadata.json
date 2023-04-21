@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/p/insurance/{{Providers.selectedRow.MRN}}"
+        "url": "web:4000/p/insurance/{{MRN_insurance.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"subscriberID\": {{subscriberID.text}}\n\t\"groupNumber\": {{groupNumber.text}}\n\t\"provider\": {{Provider.text}}\n\t\"subscriberDateOfBirth\": {{dob.text}}\n\t\"firstNameSubscriber\": {{firstName.text}}\n\t\"lastNameSubscriber\": {{lastName.text}}\n}",
+      "body": "{\n\t\"subscriberID\": {{subscriberID.text}},\n\t\"groupNumber\": {{groupNumber.text}},\n\t\"provider\": {{Provider.text}},\n\t\"subscriberDateOfBirth\": {{dob.text}},\n\t\"firstNameSubscriber\": {{firstName.text}},\n\t\"lastNameSubscriber\": {{lastName.text}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -46,14 +46,17 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
+      },
+      {
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "MRN_insurance.text",
       "Provider.text",
-      "Providers.selectedRow.MRN",
       "dob.text",
       "firstName.text",
       "groupNumber.text",

@@ -1,4 +1,4 @@
 {
-	"provider": {{DeleteProvider}},
-	"subscriberID": {{DeletesubscriberID}}
+	"provider": {{DeleteProvider.text}},
+	"subscriberID": {{DeletesubscriberID.text}}
 }

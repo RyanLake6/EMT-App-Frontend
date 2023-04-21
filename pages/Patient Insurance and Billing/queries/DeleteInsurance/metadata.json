@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"provider\": {{DeleteProvider}},\n\t\"subscriberID\": {{DeletesubscriberID}}\n}",
+      "body": "{\n\t\"provider\": {{DeleteProvider.text}},\n\t\"subscriberID\": {{DeletesubscriberID.text}}\n}",
       "bodyFormData": [],
       "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
@@ -52,8 +52,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "DeleteProvider",
-      "DeletesubscriberID",
+      "DeleteProvider.text",
+      "DeletesubscriberID.text",
       "MRN_insurance.text"
     ],
     "userSetOnLoad": false,

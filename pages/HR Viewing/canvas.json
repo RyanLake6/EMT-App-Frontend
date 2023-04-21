@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1200,
+          "bottomRow": 1260,
           "containerStyle": "none",
           "snapRows": 67,
           "parentRowSpace": 1,
@@ -35,8 +35,8 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 4,
-              "bottomRow": 28,
+              "topRow": 10,
+              "bottomRow": 34,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -329,8 +329,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 9,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 33,
               "minDynamicHeight": 10
             },
             {
@@ -338,7 +340,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 7,
+              "topRow": 12,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -406,7 +408,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 20,
+              "bottomRow": 25,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -477,8 +479,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 38,
-              "bottomRow": 79,
+              "topRow": 44,
+              "bottomRow": 85,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -571,9 +573,11 @@
               "isLoading": false,
               "responsiveBehavior": "fill",
               "yAxisName": "Revenue($)",
+              "originalTopRow": 43,
               "chartName": "Rating Report",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
+              "originalBottomRow": 84,
               "chartType": "PIE_CHART"
             },
             {
@@ -593,8 +597,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 30,
-              "bottomRow": 34,
+              "topRow": 36,
+              "bottomRow": 40,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -629,8 +633,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "hug",
+              "originalTopRow": 35,
               "disabledWhenInvalid": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "originalBottomRow": 39,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
@@ -645,8 +651,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 38,
-              "bottomRow": 78,
+              "topRow": 44,
+              "bottomRow": 84,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -753,9 +759,11 @@
               "isLoading": false,
               "responsiveBehavior": "fill",
               "yAxisName": "Minutes",
+              "originalTopRow": 43,
               "chartName": "Average Travel Times",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Travel Times",
+              "originalBottomRow": 83,
               "chartType": "COLUMN_CHART"
             },
             {
@@ -770,8 +778,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 83,
-              "bottomRow": 120,
+              "topRow": 89,
+              "bottomRow": 126,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -864,9 +872,11 @@
               "isLoading": false,
               "responsiveBehavior": "fill",
               "yAxisName": "Number of Calls Attended",
+              "originalTopRow": 88,
               "chartName": "Emergencies by day of month",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Day of Month",
+              "originalBottomRow": 125,
               "chartType": "LINE_CHART"
             },
             {
@@ -880,8 +890,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 83,
-              "bottomRow": 120,
+              "topRow": 89,
+              "bottomRow": 126,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -974,10 +984,68 @@
               "isLoading": false,
               "responsiveBehavior": "fill",
               "yAxisName": "Number of Calls",
+              "originalTopRow": 88,
               "chartName": "Number of Call Types",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Call Type",
+              "originalBottomRow": 125,
               "chartType": "BAR_CHART"
+            },
+            {
+              "widgetName": "Text2",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 2,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Employee View:",
+              "key": "nxfrn9xc54",
+              "isDeprecated": false,
+              "rightColumn": 17,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "oxq2zn0zf2",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 2,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 6,
+              "fontSize": "1.875rem",
+              "minDynamicHeight": 4
             }
           ]
         },
@@ -989,8 +1057,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "Last_Name.text",
-                "First_Name.text"
+                "First_Name.text",
+                "Last_Name.text"
               ],
               "timeoutInMillisecond": 10000
             }
